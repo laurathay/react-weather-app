@@ -12,7 +12,11 @@ function App() {
     let days = ["Sunday", "Monday", "Tuesay", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     let day = days[d.getDay()];
-    let date = dates[d.getDate()];
+    let date = d.getDate();
+    let month = months[d.getMonth()];
+    let year = d.getFullYear();
+
+    return `${day} ${date} ${month} ${year}`
   }
 
   return (
